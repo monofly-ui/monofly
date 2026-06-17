@@ -1,0 +1,7 @@
+{
+  "name": "@monofly/ui",
+  "dependencies": {
+    "@monofly/core": "workspace:*",
+    "@monofly/tokens": "workspace:*"
+  }
+}
