@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "@monofly/tokens/tokens.css";
+
+/*
+ * This is the bridge that makes the whole pipeline pay off:
+ *
+ *   Figma → SDS → @monofly/tokens (--mf-* CSS vars)
+ *                      ↓  (mapped here)
+ *                  Tailwind @theme  →  utilities (bg-primary, p-md, ...)
+ *
+ * We map each design token onto a Tailwind theme namespace so that
+ * authoring `bg-primary` in a consumer app resolves all the way back
+ * to the single source of truth in @monofly/tokens.
+ */
+@theme {
+  --color-primary: var(--mon-color-primary);
+  --color-secondary: var(--mon-color-secondary);
+
+  --spacing-sm: var(--mon-space-100);
+  --spacing-md: var(--mon-space-200);
+}

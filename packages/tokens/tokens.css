@@ -1,7 +1,7 @@
 :root {
-  --mf-color-primary: #033c5a;
-  --mf-color-secondary: #aa9868;
+  --mon-color-primary: #e55b0b;
+  --mon-color-secondary: #aa9868;
 
-  --mf-space-100: 0.25rem;
-  --mf-space-200: 0.5rem;
+  --mon-space-100: 0.25rem;
+  --mon-space-200: 0.5rem;
 }
