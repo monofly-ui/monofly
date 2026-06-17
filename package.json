@@ -1,21 +1,18 @@
 {
   "name": "monofly",
-  "version": "0.0.1",
   "private": true,
   "description": "",
-  "main": "index.js",
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "dev": "turbo run dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devEngines": {
-    "packageManager": {
-      "name": "pnpm",
-      "version": "^11.1.2",
-      "onFail": "download"
-    }
-  },
-  "type": "module"
+  "devDependencies": {
+    "turbo": "catalog:"
+  }
 }
