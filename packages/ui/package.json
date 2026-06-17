@@ -1,7 +1,13 @@
 {
   "name": "@monofly/ui",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "styles"
+  ],
   "exports": {
     "./styles/theme.css": "./styles/theme.css"
   },

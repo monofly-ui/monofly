@@ -1,7 +1,9 @@
 {
   "name": "@monofly/tokens",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",

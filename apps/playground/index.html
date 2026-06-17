@@ -3,17 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Monofly - Playground</title>
+    <title>Monofly · Playground</title>
   </head>
-  <body>
-    <main class="min-h-screen bg-primary p-md text-white">
-      <h1 class="text-4xl font-bold">Hello Monofly</h1>
-      <p class="p-md">
-        This surface is <code>bg-primary</code>, sourced from
-        <code>--mf-color-primary</code> through the token pipeline:
-        tokens → tailwind → app. No React in sight.
-      </p>
+  <body
+    class="min-h-screen bg-white font-sans text-zinc-700 antialiased selection:bg-primary selection:text-black"
+  >
+    <!-- Token-sourced ambient glow: the radial tint reads straight from --color-primary, so even the backdrop is wired to the pipeline. -->
+    <div
+      class="pointer-events-none fixed inset-0 bg-[radial-gradient(120%_80%_at_50%_-10%,color-mix(in_oklab,var(--color-primary)_26%,transparent),transparent_50%)]"
+      aria-hidden="true"
+    ></div>
+
+    <main
+      class="relative mx-auto flex min-h-screen max-w-3xl flex-col justify-center gap-12 px-6 py-20"
+    >
+      <!-- ── Hero ─────────────────────────────────────────────── -->
+      <header class="flex flex-col gap-5">
+        <span class="inline-flex w-fit items-center gap-2 rounded-full border border-black/10 bg-white/5 px-3 py-1 text-xs font-medium tracking-widest text-zinc-400 uppercase backdrop-blur">
+          <span class="size-1.5 rounded-full bg-primary shadow-[0_0_12px] shadow-primary"></span>
+          Monorepo · Design Tokens
+        </span>
+        <h1 class="text-5xl font-bold tracking-tight text-[#08090c] sm:text-6xl">Mono<span class="text-primary">Fly</span></h1>
+        <p class="max-w-xl text-lg leading-relaxed text-zinc-400">
+          One source of truth, traced end to end. A color defined once in
+          <code class="rounded bg-black/5 px-1.5 py-0.5 font-mono text-sm text-zinc-400">@monofly/tokens</code>
+          flows through a Tailwind
+          <code class="rounded bg-black/5 px-1.5 py-0.5 font-mono text-sm text-zinc-400">@theme</code>
+          bridge and lands as a utility class in this app —
+          <span class="text-zinc-400">no React in sight.</span>
+        </p>
+      </header>
+
+      <!-- ── Pipeline ────────────────────────────────────────── -->
+      <section class="flex flex-col gap-3" aria-label="Token pipeline">
+        <div class="grid gap-3 sm:grid-cols-[1fr_auto_1fr_auto_1fr] sm:items-stretch">
+          <!-- Stage 1: source of truth -->
+          <article class="rounded-xl border border-black/10 bg-black/[0.03] p-4 backdrop-blur">
+            <p class="text-[11px] font-semibold tracking-widest text-zinc-600 uppercase">tokens</p>
+            <p class="mt-2 font-mono text-sm text-zinc-400">@monofly/tokens</p>
+            <p class="mt-3 font-mono text-xs text-primary">--mon-color-primary</p>
+            <p class="mt-1 text-xs text-zinc-500">the single source of truth</p>
+          </article>
+
+          <div class="hidden items-center justify-center text-zinc-600 sm:flex" aria-hidden="true">→</div>
+
+          <!-- Stage 2: the bridge -->
+          <article class="rounded-xl border border-black/10 bg-black/[0.03] p-4 backdrop-blur">
+            <p class="text-[11px] font-semibold tracking-widest text-zinc-500 uppercase">bridge</p>
+            <p class="mt-2 font-mono text-sm text-zinc-400">@theme · ui</p>
+            <p class="mt-3 font-mono text-xs text-secondary">--color-primary</p>
+            <p class="mt-1 text-xs text-zinc-500">mapped to a Tailwind namespace</p>
+          </article>
+
+          <div class="hidden items-center justify-center text-zinc-600 sm:flex" aria-hidden="true">→</div>
+
+          <!-- Stage 3: authored here -->
+          <article class="rounded-xl border border-primary/60 bg-primary/[0.06] p-4 backdrop-blur">
+            <p class="text-[11px] font-semibold tracking-widest text-primary/60 uppercase">app</p>
+            <p class="mt-2 font-mono text-sm text-zinc-400">playground</p>
+            <p class="mt-3 font-mono text-xs text-black">class="bg-primary"</p>
+            <p class="mt-1 text-xs text-zinc-500">authored, resolved end to end</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ── Live tokens ─────────────────────────────────────── -->
+      <section class="flex flex-col gap-4" aria-label="Token reference">
+        <h2 class="text-xs font-semibold tracking-widest text-zinc-500 uppercase">Live tokens</h2>
+
+        <div class="grid gap-3 sm:grid-cols-2">
+          <!-- Primary swatch (rendered with the real bg-primary utility) -->
+          <article class="overflow-hidden rounded-xl border border-black/10 bg-black/[0.03]">
+            <div class="h-20 bg-primary"></div>
+            <div class="flex items-center justify-between p-md">
+              <div>
+                <p class="font-mono text-sm text-black">bg-primary</p>
+                <p class="font-mono text-xs text-zinc-500">--mon-color-primary</p>
+              </div>
+              <code class="font-mono text-xs text-zinc-400">#0be53e</code>
+            </div>
+          </article>
+
+          <!-- Secondary swatch -->
+          <article class="overflow-hidden rounded-xl border border-black/10 bg-black/[0.03]">
+            <div class="h-20 bg-secondary"></div>
+            <div class="flex items-center justify-between p-md">
+              <div>
+                <p class="font-mono text-sm text-black">text-secondary</p>
+                <p class="font-mono text-xs text-zinc-500">--mon-color-secondary</p>
+              </div>
+              <code class="font-mono text-xs text-zinc-400">#1c5aed</code>
+            </div>
+          </article>
+        </div>
+
+        <!-- Spacing scale, drawn with the actual p-sm / p-md utilities -->
+        <div class="grid gap-3 sm:grid-cols-2">
+          <article class="flex items-center gap-4 rounded-xl border border-black/10 bg-black/[0.03] p-4">
+            <span class="bg-primary/20 p-sm ring-1 ring-inset ring-primary/40">
+              <span class="block size-4 rounded-sm bg-primary"></span>
+            </span>
+            <div>
+              <p class="font-mono text-sm text-black">p-sm</p>
+              <p class="font-mono text-xs text-zinc-500">--mon-space-100 · 0.25rem</p>
+            </div>
+          </article>
+
+          <article class="flex items-center gap-4 rounded-xl border border-black/10 bg-black/[0.03] p-4">
+            <span class="bg-primary/20 p-md ring-1 ring-inset ring-primary/40">
+              <span class="block size-4 rounded-sm bg-primary"></span>
+            </span>
+            <div>
+              <p class="font-mono text-sm text-black">p-md</p>
+              <p class="font-mono text-xs text-zinc-500">--mon-space-200 · 0.5rem</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ── Footer ───────────────────────────────────────────── -->
+      <footer class="flex md:flex-col items-start gap-2 text-sm text-zinc-600">
+        <span class="inline-flex w-fit items-center gap-2 rounded-full px-3 py-1 text-xs font-medium text-zinc-400 backdrop-blur">
+          <span class="size-1.5 animate-pulse rounded-full bg-primary"></span>
+          Figma → SDS → tokens → Tailwind → app.
+        </span>
+        <span class="inline-flex w-fit items-center gap-2 rounded-full px-3 py-1 text-xs font-medium text-zinc-400 backdrop-blur">
+          <span class="size-1.5 animate-pulse rounded-full bg-secondary"></span>
+          Pure CSS, all the way down.
+        </span>
+      </footer>
     </main>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
