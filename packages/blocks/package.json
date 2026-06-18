@@ -2,9 +2,38 @@
   "name": "@monofly/blocks",
   "version": "0.0.2",
   "private": true,
-  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "exports": {
-    "./link-in-bio-brutalist": "./link-in-bio-brutalist.tsx"
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./link-in-bio-brutalist": {
+      "import": {
+        "types": "./dist/link-in-bio-brutalist.d.mts",
+        "default": "./dist/link-in-bio-brutalist.mjs"
+      },
+      "require": {
+        "types": "./dist/link-in-bio-brutalist.d.ts",
+        "default": "./dist/link-in-bio-brutalist.js"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/link-in-bio-brutalist.tsx --format esm,cjs --dts",
+    "dev": "tsup src/index.ts src/link-in-bio-brutalist.tsx --watch"
   },
   "peerDependencies": {
     "react": "catalog:",
@@ -14,6 +43,8 @@
     "@types/react": "catalog:",
     "@types/react-dom": "catalog:",
     "react": "catalog:",
-    "react-dom": "catalog:"
+    "react-dom": "catalog:",
+    "tsup": "catalog:",
+    "typescript": "catalog:"
   }
 }
