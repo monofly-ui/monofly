@@ -4,6 +4,12 @@ import {
   getFileVariables,
   KEY_PREFIX_COLLECTION,
 } from "./fromFigma.mjs";
+import {
+  isTokensStudioVariables,
+  isTokensStudioStyles,
+  tokensStudioToVariablesJSON,
+  tokensStudioStylesToCSS,
+} from "./fromTokensStudio.mjs";
 
 const FILE_KEY = process.env.FIGMA_FILE_KEY;
 const SKIP_REST_API = process.argv.includes("--skip-rest-api");
@@ -27,9 +33,9 @@ const COLLECTION_DATA = {
     settings: {
       prefix: "color",
       // Light mode names from Figma in lower underscore case. First is default light mode.
-      colorSchemes: ["sds_light"],
+      colorSchemes: ["light"],
       // Dark mode names from Figma in lower underscore case. First is default dark mode.
-      colorSchemesDark: ["sds_dark"],
+      colorSchemesDark: ["dark"],
       // Strings to strip from mode names above when transforming to theme class names. (Only applicable when more than one per mode)
       colorSchemeLightRemove: "_light",
       colorSchemeDarkRemove: "_dark",
@@ -89,12 +95,17 @@ async function initialize() {
     const tokensJSON = await getFileVariables(FILE_KEY, NAMESPACE);
     fs.writeFileSync("./tokens.json", JSON.stringify(tokensJSON, null, 2));
   }
+  // Read raw token JSON; normalize Tokens Studio exports into the legacy schema.
+  let tokensRaw = JSON.parse(fs.readFileSync("./tokens.json"));
+  const tokensStudio = isTokensStudioVariables(tokensRaw);
+  if (tokensStudio) {
+    console.log("Detected Tokens Studio variables export — normalizing.");
+    tokensRaw = tokensStudioToVariablesJSON(tokensRaw, NAMESPACE);
+  }
+
   // Process token JSON into CSS
-  const { processed, themeCSS } = processTokenJSON(
-    JSON.parse(fs.readFileSync("./tokens.json")),
-  );
+  const { processed, themeCSS } = processTokenJSON(tokensRaw);
   // An object to lookup variables in when processing styles.
-  console.log(processed.color.definitions.sds_light);
   const variableLookups = Object.keys(processed)
     .flatMap((key) => Object.values(processed[key].definitions)[0])
     .reduce((into, item) => {
@@ -103,10 +114,11 @@ async function initialize() {
     }, {});
 
   // Process styles JSON into CSS
-  const stylesCSS = await processStyleJSON(
-    JSON.parse(fs.readFileSync("./styles.json")),
-    variableLookups,
-  );
+  const stylesRaw = JSON.parse(fs.readFileSync("./styles.json"));
+  const stylesCSS =
+    tokensStudio || isTokensStudioStyles(stylesRaw)
+      ? tokensStudioStylesToCSS(stylesRaw, TOKEN_PREFIX, CONVERT_TO_REM)
+      : await processStyleJSON(stylesRaw, variableLookups);
 
   // Write our processed CSS
   fs.writeFileSync(

@@ -1,1092 +1,589 @@
-[
   {
-    "type": "TEXT",
-    "name": "Title Hero",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10189"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10188"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10190"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Title Page",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10197"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:58:8569"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:58:8572"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Subtitle",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10177"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10176"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10178"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Heading",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10186"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10185"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10187"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Subheading",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:2103:22308"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:2103:22306"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:2103:22310"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Body Base",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10180"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10179"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10181"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Body Strong",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10180"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10179"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:14844"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Body Emphasis",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10180"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10179"
-    },
-    "fontStyle": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:14846"
-    }
-  },
-  {
-    "type": "TEXT",
-    "name": "Body Link",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10180"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10179"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10181"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Body Small",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10216"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10179"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10181"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Body Small Strong",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10216"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10179"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:14844"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Single Line/Body Base",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10180"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10179"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10181"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Body Code",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10183"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10182"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10184"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": "Single Line/Body Small Strong",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10216"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:10179"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:66:14844"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": ".Utilities/Component notes/Regular",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:9:11196"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:9:11201"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:9:11183"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "type": "TEXT",
-    "name": ".Utilities/Component notes/Bold",
-    "fontSize": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:9:11196"
-    },
-    "fontFamily": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:9:11201"
-    },
-    "fontWeight": {
-      "type": "VARIABLE_ALIAS",
-      "id": "VariableID:9:11186"
-    },
-    "fontStyle": "normal"
-  },
-  {
-    "key": "3e65b969afe4d5f20ed457a149491dc4956eb2ae",
-    "name": "Drop Shadow/300",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.05000000074505806
-        },
-        "blendMode": "NORMAL",
-        "offset": {
+    "Drop Shadow": {
+      "100": {
+        "value": {
+          "color": "#0c0c0d0d",
+          "type": "dropShadow",
           "x": 0,
-          "y": 4
+          "y": 1,
+          "blur": 4,
+          "spread": 0
         },
-        "radius": 4,
-        "spread": -1,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11287"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11234"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          }
-        }
+        "type": "boxShadow"
       },
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.10000000149011612
-        },
-        "blendMode": "NORMAL",
-        "offset": {
-          "x": 0,
-          "y": 4
-        },
-        "radius": 4,
-        "spread": -1,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
+      "200": {
+        "value": [
+          {
+            "color": "#0c0c0d1a",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 1,
+            "blur": 4,
+            "spread": 0
           },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11287"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11235"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
+          {
+            "color": "#0c0c0d0d",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 1,
+            "blur": 4,
+            "spread": 0
           }
-        }
-      }
-    ]
-  },
-  {
-    "key": "08e4fb3d3bd2437bc14b564c564372ffa0e43d34",
-    "name": "Drop Shadow/200",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.05000000074505806
-        },
-        "blendMode": "NORMAL",
-        "offset": {
-          "x": 0,
-          "y": 1
-        },
-        "radius": 4,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11234"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11281"
-          }
-        }
+        ],
+        "type": "boxShadow"
       },
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.10000000149011612
-        },
-        "blendMode": "NORMAL",
-        "offset": {
-          "x": 0,
-          "y": 1
-        },
-        "radius": 4,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
+      "300": {
+        "value": [
+          {
+            "color": "#0c0c0d1a",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 4,
+            "blur": 4,
+            "spread": -1
           },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11235"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11281"
+          {
+            "color": "#0c0c0d0d",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 4,
+            "blur": 4,
+            "spread": -1
           }
-        }
-      }
-    ]
-  },
-  {
-    "key": "7f76f7ecd043afa33ac25b1848567988a4fb2496",
-    "name": "Drop Shadow/100",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.05000000074505806
-        },
-        "blendMode": "NORMAL",
-        "offset": {
-          "x": 0,
-          "y": 1
-        },
-        "radius": 4,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11234"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11281"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "key": "447c927d894e6139bc6b1ce155365af001d8e4ff",
-    "name": "Drop Shadow/400",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.05000000074505806
-        },
-        "blendMode": "NORMAL",
-        "offset": {
-          "x": 0,
-          "y": 4
-        },
-        "radius": 4,
-        "spread": -4,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11288"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11234"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          }
-        }
+        ],
+        "type": "boxShadow"
       },
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.10000000149011612
-        },
-        "blendMode": "NORMAL",
-        "offset": {
-          "x": 0,
-          "y": 16
-        },
-        "radius": 32,
-        "spread": -4,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11285"
+      "400": {
+        "value": [
+          {
+            "color": "#0c0c0d1a",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 16,
+            "blur": 32,
+            "spread": -4
           },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11288"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11235"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11284"
+          {
+            "color": "#0c0c0d0d",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 4,
+            "blur": 4,
+            "spread": -4
           }
-        }
-      }
-    ]
-  },
-  {
-    "key": "f48bb7871dfc4f9cccbc7004de8312e0b7af5df0",
-    "name": "Drop Shadow/500",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.05000000074505806
-        },
-        "blendMode": "NORMAL",
-        "offset": {
-          "x": 0,
-          "y": 4
-        },
-        "radius": 4,
-        "spread": -4,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11288"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11234"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          }
-        }
+        ],
+        "type": "boxShadow"
       },
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.10000000149011612
-        },
-        "blendMode": "NORMAL",
-        "offset": {
+      "500": {
+        "value": [
+          {
+            "color": "#0c0c0d1a",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 16,
+            "blur": 16,
+            "spread": -8
+          },
+          {
+            "color": "#0c0c0d0d",
+            "type": "dropShadow",
+            "x": 0,
+            "y": 4,
+            "blur": 4,
+            "spread": -4
+          }
+        ],
+        "type": "boxShadow"
+      },
+      "600": {
+        "value": {
+          "color": "#0c0c0d66",
+          "type": "dropShadow",
           "x": 0,
-          "y": 16
+          "y": 16,
+          "blur": 32,
+          "spread": -8
         },
-        "radius": 16,
-        "spread": -8,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11284"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11289"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11235"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11284"
-          }
-        }
+        "type": "boxShadow"
       }
-    ]
-  },
-  {
-    "key": "e313e16b75bd14ec726be6082e127f53ee79442e",
-    "name": "Drop Shadow/600",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "DROP_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.4000000059604645
-        },
-        "blendMode": "NORMAL",
-        "offset": {
+    },
+    "Inner Shadow": {
+      "100": {
+        "value": {
+          "color": "#0c0c0d0d",
+          "type": "innerShadow",
           "x": 0,
-          "y": 16
+          "y": 1,
+          "blur": 4,
+          "spread": 0
         },
-        "radius": 32,
-        "spread": -8,
-        "showShadowBehindNode": false,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11285"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11289"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11237"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11284"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "key": "802bc2da78755a300f04c7e0d4bb6ca8daead387",
-    "name": "Inner Shadow/100",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "INNER_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.05000000074505806
-        },
-        "blendMode": "NORMAL",
-        "offset": {
+        "type": "boxShadow"
+      },
+      "200": {
+        "value": {
+          "color": "#0c0c0d0d",
+          "type": "innerShadow",
           "x": 0,
-          "y": 1
+          "y": 1,
+          "blur": 4,
+          "spread": 0
         },
-        "radius": 4,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:228:6769"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11234"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11281"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "key": "be61ac26220d83da0b79e94e7485ff137cb3c33a",
-    "name": "Inner Shadow/200",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "INNER_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.05000000074505806
-        },
-        "blendMode": "NORMAL",
-        "offset": {
+        "type": "boxShadow"
+      },
+      "300": {
+        "value": {
+          "color": "#0c0c0d0d",
+          "type": "innerShadow",
           "x": 0,
-          "y": 1
+          "y": 4,
+          "blur": 4,
+          "spread": -1
         },
-        "radius": 4,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11234"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11281"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "key": "5ec4eef9e812e68cac5b330e92d40ae06facbebd",
-    "name": "Inner Shadow/300",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "INNER_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.05000000074505806
-        },
-        "blendMode": "NORMAL",
-        "offset": {
+        "type": "boxShadow"
+      },
+      "400": {
+        "value": {
+          "color": "#0c0c0d1a",
+          "type": "innerShadow",
           "x": 0,
-          "y": 4
+          "y": 16,
+          "blur": 32,
+          "spread": -4
         },
-        "radius": 4,
-        "spread": -1,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11287"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11234"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11282"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "key": "00f19a566a84bcdd59790d973ceedb7c23dfd392",
-    "name": "Inner Shadow/400",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "INNER_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.10000000149011612
-        },
-        "blendMode": "NORMAL",
-        "offset": {
+        "type": "boxShadow"
+      },
+      "500": {
+        "value": {
+          "color": "#0c0c0d1a",
+          "type": "innerShadow",
           "x": 0,
-          "y": 16
+          "y": 16,
+          "blur": 16,
+          "spread": -8
         },
-        "radius": 32,
-        "spread": -4,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11285"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11288"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11235"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11284"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "key": "6117fbf113fb0e5dcada2b763571198ef1ad3512",
-    "name": "Inner Shadow/500",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "INNER_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.10000000149011612
-        },
-        "blendMode": "NORMAL",
-        "offset": {
+        "type": "boxShadow"
+      },
+      "600": {
+        "value": {
+          "color": "#0c0c0d66",
+          "type": "innerShadow",
           "x": 0,
-          "y": 16
+          "y": 16,
+          "blur": 32,
+          "spread": -8
         },
-        "radius": 16,
-        "spread": -8,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11284"
-          },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11289"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11235"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11284"
-          }
-        }
+        "type": "boxShadow"
       }
-    ]
-  },
-  {
-    "key": "8b60e9c636b378c60fb369cd01061a0a3f4fc74b",
-    "name": "Inner Shadow/600",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "INNER_SHADOW",
-        "visible": true,
-        "color": {
-          "r": 0.0470588244497776,
-          "g": 0.0470588244497776,
-          "b": 0.05098039284348488,
-          "a": 0.4000000059604645
+    },
+    "Title Hero": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-0}",
+        "lineHeight": "{lineHeights.0}",
+        "fontSize": "{fontSize.6}",
+        "letterSpacing": "{letterSpacing.0}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Code": {
+      "Font Family": {
+        "value": "Roboto Mono",
+        "type": "fontFamilies"
+      }
+    },
+    "lineHeights": {
+      "0": {
+        "value": "120%",
+        "type": "lineHeights"
+      },
+      "1": {
+        "value": "120%",
+        "type": "lineHeights"
+      },
+      "2": {
+        "value": "120%",
+        "type": "lineHeights"
+      },
+      "3": {
+        "value": "120%",
+        "type": "lineHeights"
+      },
+      "4": {
+        "value": "120%",
+        "type": "lineHeights"
+      },
+      "5": {
+        "value": "140%",
+        "type": "lineHeights"
+      },
+      "6": {
+        "value": "140%",
+        "type": "lineHeights"
+      },
+      "7": {
+        "value": "140%",
+        "type": "lineHeights"
+      },
+      "8": {
+        "value": "140%",
+        "type": "lineHeights"
+      },
+      "9": {
+        "value": "140%",
+        "type": "lineHeights"
+      },
+      "10": {
+        "value": "140%",
+        "type": "lineHeights"
+      },
+      "11": {
+        "value": "130%",
+        "type": "lineHeights"
+      },
+      "12": {
+        "value": "100%",
+        "type": "lineHeights"
+      },
+      "13": {
+        "value": "100%",
+        "type": "lineHeights"
+      },
+      "14": {
+        "value": "140%",
+        "type": "lineHeights"
+      },
+      "15": {
+        "value": "140%",
+        "type": "lineHeights"
+      }
+    },
+    "fontWeights": {
+      "inter-0": {
+        "value": "Bold",
+        "type": "fontWeights"
+      },
+      "inter-1": {
+        "value": "Regular",
+        "type": "fontWeights"
+      },
+      "inter-2": {
+        "value": "Semi Bold",
+        "type": "fontWeights"
+      },
+      "roboto-mono-4": {
+        "value": "Regular",
+        "type": "fontWeights"
+      },
+      "roboto-mono-5": {
+        "value": "Bold",
+        "type": "fontWeights"
+      }
+    },
+    "Body": {
+      "Font Style Italic": {
+        "value": "Italic",
+        "type": "fontWeights"
+      }
+    },
+    "fontSize": {
+      "0": {
+        "value": 14,
+        "type": "fontSizes"
+      },
+      "1": {
+        "value": 16,
+        "type": "fontSizes"
+      },
+      "2": {
+        "value": 20,
+        "type": "fontSizes"
+      },
+      "3": {
+        "value": 24,
+        "type": "fontSizes"
+      },
+      "4": {
+        "value": 32,
+        "type": "fontSizes"
+      },
+      "5": {
+        "value": 48,
+        "type": "fontSizes"
+      },
+      "6": {
+        "value": 72,
+        "type": "fontSizes"
+      }
+    },
+    "letterSpacing": {
+      "0": {
+        "value": "-3%",
+        "type": "letterSpacing"
+      },
+      "1": {
+        "value": "-2%",
+        "type": "letterSpacing"
+      },
+      "2": {
+        "value": "0%",
+        "type": "letterSpacing"
+      }
+    },
+    "paragraphSpacing": {
+      "0": {
+        "value": 0,
+        "type": "paragraphSpacing"
+      }
+    },
+    "Title Page": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-0}",
+        "lineHeight": "{lineHeights.0}",
+        "fontSize": "{fontSize.5}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Subtitle": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-1}",
+        "lineHeight": "{lineHeights.0}",
+        "fontSize": "{fontSize.4}",
+        "letterSpacing": "{letterSpacing.2}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Heading": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-2}",
+        "lineHeight": "{lineHeights.0}",
+        "fontSize": "{fontSize.3}",
+        "letterSpacing": "{letterSpacing.1}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Subheading": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-1}",
+        "lineHeight": "{lineHeights.0}",
+        "fontSize": "{fontSize.2}",
+        "letterSpacing": "{letterSpacing.2}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Body Base": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-1}",
+        "lineHeight": "{lineHeights.5}",
+        "fontSize": "{fontSize.1}",
+        "letterSpacing": "{letterSpacing.2}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Body Strong": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-2}",
+        "lineHeight": "{lineHeights.5}",
+        "fontSize": "{fontSize.1}",
+        "letterSpacing": "{letterSpacing.2}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Body Emphasis": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{Body.Font Style Italic}",
+        "lineHeight": "{lineHeights.5}",
+        "fontSize": "{fontSize.1}",
+        "letterSpacing": "{letterSpacing.2}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Body Link": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-1}",
+        "lineHeight": "{lineHeights.5}",
+        "fontSize": "{fontSize.1}",
+        "letterSpacing": "{letterSpacing.2}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.underline}"
+      },
+      "type": "typography"
+    },
+    "Body Small": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-1}",
+        "lineHeight": "{lineHeights.5}",
+        "fontSize": "{fontSize.0}",
+        "letterSpacing": "{letterSpacing.2}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Body Small Strong": {
+      "value": {
+        "fontFamily": "{Title Hero.Font Family}",
+        "fontWeight": "{fontWeights.inter-2}",
+        "lineHeight": "{lineHeights.5}",
+        "fontSize": "{fontSize.0}",
+        "letterSpacing": "{letterSpacing.2}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Body Code": {
+      "value": {
+        "fontFamily": "{Code.Font Family}",
+        "fontWeight": "{fontWeights.roboto-mono-4}",
+        "lineHeight": "{lineHeights.11}",
+        "fontSize": "{fontSize.1}",
+        "letterSpacing": "{letterSpacing.2}",
+        "paragraphSpacing": "{paragraphSpacing.0}",
+        "paragraphIndent": "{paragraphIndent.0}",
+        "textCase": "{textCase.none}",
+        "textDecoration": "{textDecoration.none}"
+      },
+      "type": "typography"
+    },
+    "Single Line": {
+      "Body Base": {
+        "value": {
+          "fontFamily": "{Title Hero.Font Family}",
+          "fontWeight": "{fontWeights.inter-1}",
+          "lineHeight": "{lineHeights.12}",
+          "fontSize": "{fontSize.1}",
+          "letterSpacing": "{letterSpacing.2}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
         },
-        "blendMode": "NORMAL",
-        "offset": {
-          "x": 0,
-          "y": 16
+        "type": "typography",
+        "description": "Used for any text element where you need 100% line height. For example, an input field, a label."
+      },
+      "Body Small Strong": {
+        "value": {
+          "fontFamily": "{Title Hero.Font Family}",
+          "fontWeight": "{fontWeights.inter-2}",
+          "lineHeight": "{lineHeights.12}",
+          "fontSize": "{fontSize.0}",
+          "letterSpacing": "{letterSpacing.2}",
+          "paragraphSpacing": "{paragraphSpacing.0}",
+          "paragraphIndent": "{paragraphIndent.0}",
+          "textCase": "{textCase.none}",
+          "textDecoration": "{textDecoration.none}"
         },
-        "radius": 32,
-        "spread": -8,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11285"
+        "type": "typography"
+      }
+    },
+    "": {
+      "Utilities": {
+        "Component notes": {
+          "Regular": {
+            "value": {
+              "fontFamily": "{Code.Font Family}",
+              "fontWeight": "{fontWeights.roboto-mono-4}",
+              "lineHeight": "{lineHeights.5}",
+              "fontSize": "{fontSize.1}",
+              "letterSpacing": "{letterSpacing.2}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography"
           },
-          "spread": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11289"
-          },
-          "color": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11237"
-          },
-          "offsetX": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11280"
-          },
-          "offsetY": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:9:11284"
+          "Bold": {
+            "value": {
+              "fontFamily": "{Code.Font Family}",
+              "fontWeight": "{fontWeights.roboto-mono-5}",
+              "lineHeight": "{lineHeights.5}",
+              "fontSize": "{fontSize.1}",
+              "letterSpacing": "{letterSpacing.2}",
+              "paragraphSpacing": "{paragraphSpacing.0}",
+              "paragraphIndent": "{paragraphIndent.0}",
+              "textCase": "{textCase.none}",
+              "textDecoration": "{textDecoration.none}"
+            },
+            "type": "typography"
           }
         }
       }
-    ]
-  },
-  {
-    "key": "3913b31902a93b4b85fa1ec237ac74e0a4be6061",
-    "name": "Blur/Overlay",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "BACKGROUND_BLUR",
-        "visible": true,
-        "radius": 4,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:228:6769"
-          }
-        }
+    },
+    "textCase": {
+      "none": {
+        "value": "none",
+        "type": "textCase"
       }
-    ]
-  },
-  {
-    "key": "ca6961a315730326ae25a890e8de657a515b7eff",
-    "name": "Blur/Layer",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "LAYER_BLUR",
-        "visible": true,
-        "radius": 4,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:228:6769"
-          }
-        }
+    },
+    "textDecoration": {
+      "none": {
+        "value": "none",
+        "type": "textDecoration"
+      },
+      "underline": {
+        "value": "underline",
+        "type": "textDecoration"
       }
-    ]
-  },
-  {
-    "key": "672e14f41d004e1fc1b1030b8f8217349bd8dcf3",
-    "name": "Blur/Glass",
-    "styleType": "EFFECT",
-    "remote": false,
-    "description": "",
-    "type": "EFFECT",
-    "effects": [
-      {
-        "type": "BACKGROUND_BLUR",
-        "visible": true,
-        "radius": 4,
-        "boundVariables": {
-          "radius": {
-            "type": "VARIABLE_ALIAS",
-            "id": "VariableID:228:6769"
-          }
-        }
+    },
+    "paragraphIndent": {
+      "0": {
+        "value": "0px",
+        "type": "dimension"
       }
+    },
+  "$themes": [],
+  "$metadata": {
+    "tokenSetOrder": [
+      ""
     ]
-  },
-  {
-    "key": "e8fec477e22a9bd4969d40e57bfee35026616acd",
-    "name": "Image Placeholder",
-    "styleType": "FILL",
-    "remote": false,
-    "description": ""
   }
-]
+}

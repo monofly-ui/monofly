@@ -3,8 +3,8 @@ import { colors } from "./color"
 
 describe("colors", () => {
   it("exposes brand tokens", () => {
-    expect(colors.brand.primary).toBe("#cd2a05")
-    expect(colors.brand.secondary).toBe("#e7d808")
+    expect(colors.brand.primary).toBe("#3178d4")
+    expect(colors.brand.secondary).toBe("#48c7e6")
   })
 
   it("uses valid 6-digit hex values", () => {

@@ -1,0 +1,19 @@
+{
+  "name": "@monofly/blocks",
+  "version": "0.0.2",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./link-in-bio-brutalist": "./link-in-bio-brutalist.tsx"
+  },
+  "peerDependencies": {
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  },
+  "devDependencies": {
+    "@types/react": "catalog:",
+    "@types/react-dom": "catalog:",
+    "react": "catalog:",
+    "react-dom": "catalog:"
+  }
+}
